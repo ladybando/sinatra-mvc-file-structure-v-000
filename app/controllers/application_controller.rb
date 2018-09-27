@@ -8,4 +8,7 @@ class ApplicationController < Sinatra::Base
   get "/" do
   	erb :index
   end
+  
+  def initialization(attr)
+  end
 end
