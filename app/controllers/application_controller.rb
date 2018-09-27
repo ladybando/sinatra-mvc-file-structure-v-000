@@ -1,4 +1,5 @@
 class ApplicationController < Sinatra::Base
+  attr_accessor :attr
 
   configure do
   	set :views, "app/views"
@@ -10,5 +11,6 @@ class ApplicationController < Sinatra::Base
   end
   
   def initialization(attr)
+    @attr = attr
   end
 end
